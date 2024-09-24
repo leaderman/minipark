@@ -1,10 +1,10 @@
 const MiniProgram = {
-  setNavigationBarTitle: (title: string) => {
+  setNavigationBarTitle: (title: string): Promise<void> => {
     return new Promise((resolve, reject) => {
       wx.setNavigationBarTitle({
         title,
-        success: resolve,
-        fail: reject,
+        success: () => resolve(),
+        fail: (error) => reject(error),
       });
     });
   },

@@ -1,6 +1,6 @@
 import Constant from "../../../minipark/ts/constant";
 import MiniProgram from "../../../minipark/ts/miniprogram";
-import Log from "../../../minipark/ts/log";
+import { Log } from "../../../minipark/ts/log";
 
 Page({
   onLoad() {
