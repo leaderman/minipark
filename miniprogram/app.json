@@ -1,0 +1,14 @@
+{
+  "pages": ["pages/main/main"],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "minipark",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "lazyCodeLoading": "requiredComponents",
+  "useExtendedLib": {
+    "weui": true
+  }
+}
