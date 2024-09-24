@@ -1,4 +1,1 @@
-Component({
-  data: {},
-  methods: {},
-});
+Page({});

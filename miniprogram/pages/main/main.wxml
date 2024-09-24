@@ -1,1 +1,9 @@
-<view class="page"></view>
+<view class="page">
+  <mp-cells title="脚本测试">
+    <mp-cell
+      title="常量"
+      link="{{ true }}"
+      url="/pages/ts/constant/constant"
+    ></mp-cell>
+  </mp-cells>
+</view>
