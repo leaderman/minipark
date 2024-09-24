@@ -5,5 +5,6 @@
       link="{{ true }}"
       url="/pages/ts/constant/constant"
     ></mp-cell>
+    <mp-cell title="日志" link="{{ true }}" url="/pages/ts/log/log"></mp-cell>
   </mp-cells>
 </view>

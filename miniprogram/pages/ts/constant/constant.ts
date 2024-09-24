@@ -1,12 +1,12 @@
 import Constant from "../../../minipark/ts/constant";
+import MiniProgram from "../../../minipark/ts/miniprogram";
+import Log from "../../../minipark/ts/log";
 
 Page({
   onLoad() {
-    wx.setNavigationBarTitle({
-      title: "常量",
-    });
+    MiniProgram.setNavigationBarTitle("常量");
 
-    console.log(Constant.EMPTY);
-    console.log(Constant.SPACE);
+    Log.info("空字符串", Constant.EMPTY);
+    Log.info("空格", Constant.SPACE);
   },
 });

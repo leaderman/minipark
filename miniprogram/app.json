@@ -1,5 +1,9 @@
 {
-  "pages": ["pages/main/main", "pages/ts/constant/constant"],
+  "pages": [
+    "pages/main/main",
+    "pages/ts/constant/constant",
+    "pages/ts/log/log"
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "minipark",
