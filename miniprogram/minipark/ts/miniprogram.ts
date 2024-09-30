@@ -1,5 +1,8 @@
+/**
+ * 小程序 API。
+ */
 const MiniProgram = {
-  setNavigationBarTitle: (title: string): Promise<void> => {
+  setNavigationBarTitle(title: string): Promise<void> {
     return new Promise((resolve, reject) => {
       wx.setNavigationBarTitle({
         title,
