@@ -28,7 +28,22 @@ const LocalStorage = {
       throw new Error("key not found");
     }
 
-    return value;
+    return value as T;
+  },
+
+  /**
+   * 获取缓存中的键值，如果键不存在，则返回默认值。
+   * @param {string} key 键。
+   * @param {unknown} defaultValue 默认值。
+   * @returns {unknown} 值。
+   */
+  getOrDefault<T = unknown>(key: string, defaultValue: T): T {
+    const value = wx.getStorageSync(key);
+    if (value === Constant.EMPTY) {
+      return defaultValue;
+    }
+
+    return value as T;
   },
 
   /**

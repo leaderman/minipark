@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "@types/wechat-miniprogram": "^3.4.7",
-    "@typescript-park/balm": "^0.0.5"
+    "@typescript-park/balm": "^0.0.7"
   }
 }

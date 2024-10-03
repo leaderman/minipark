@@ -20,5 +20,8 @@ Page({
     // console.log(value3);
 
     LocalStorage.clear();
+
+    const value4 = LocalStorage.getOrDefault<string>("name", "default");
+    console.log(value4);
   },
 });
