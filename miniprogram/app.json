@@ -1,5 +1,10 @@
 {
-  "pages": ["pages/main/main", "pages/ts/log/log", "pages/ts/storage/storage"],
+  "pages": [
+    "pages/main/main",
+    "pages/ts/log/log",
+    "pages/ts/storage/storage",
+    "pages/ts/time/time"
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "minipark",
