@@ -3,7 +3,7 @@ import { Constant } from "@typescript-park/balm";
 /**
  * 数据缓存。
  */
-const Storage = {
+const LocalStorage = {
   /**
    * 设置缓存中的键值，值不能为空字符串，否则会抛出错误。
    * @param {string} key 键。
@@ -47,4 +47,4 @@ const Storage = {
   },
 };
 
-export default Storage;
+export default LocalStorage;

@@ -1,12 +1,12 @@
-import Storage from "../../../minipark/ts/storage";
+import LocalStorage from "../../../minipark/ts/local_storage";
 
 Page({
   data: {},
 
   onLoad() {
-    Storage.set("name", "value");
+    LocalStorage.set("name", "value");
 
-    const value = Storage.get<string>("name");
+    const value = LocalStorage.get<string>("name");
     console.log(value);
 
     // Storage.set("name", "");
@@ -14,11 +14,11 @@ Page({
     // const value2 = Storage.get<string>("name2");
     // console.log(value2);
 
-    Storage.remove("name");
+    LocalStorage.remove("name");
 
     // const value3 = Storage.get<string>("name");
     // console.log(value3);
 
-    Storage.clear();
+    LocalStorage.clear();
   },
 });
