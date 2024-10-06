@@ -6,6 +6,10 @@
       url="/pages/ts/storage/storage"
     ></mp-cell>
     <mp-cell title="日志" link="{{ true }}" url="/pages/ts/log/log"></mp-cell>
-    <mp-cell title="时间" link="{{ true }}" url="/pages/ts/time/time"></mp-cell>
+    <mp-cell
+      title="节流"
+      link="{{ true }}"
+      url="/pages/ts/throttle/throttle"
+    ></mp-cell>
   </mp-cells>
 </view>

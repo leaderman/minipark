@@ -8,13 +8,13 @@
   "license": "",
   "devDependencies": {
     "@eslint/js": "^9.11.1",
+    "@types/wechat-miniprogram": "^3.4.7",
     "eslint": "^9.11.1",
     "eslint-plugin-jsdoc": "^50.3.1",
     "globals": "^15.10.0",
     "typescript-eslint": "^8.8.0"
   },
   "dependencies": {
-    "@types/wechat-miniprogram": "^3.4.7",
-    "@typescript-park/balm": "^0.0.7"
+    "@typescript-park/balm": "^0.1.2"
   }
 }

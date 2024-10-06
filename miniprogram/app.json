@@ -3,7 +3,7 @@
     "pages/main/main",
     "pages/ts/log/log",
     "pages/ts/storage/storage",
-    "pages/ts/time/time"
+    "pages/ts/throttle/throttle"
   ],
   "window": {
     "navigationBarTextStyle": "black",
