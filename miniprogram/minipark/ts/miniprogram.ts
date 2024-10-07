@@ -121,6 +121,20 @@ const MiniProgram = {
       });
     });
   },
+
+  /**
+   * 保留当前页面，跳转到应用内的某个页面。
+   * @param {string} url 页面路径。
+   */
+  navigateTo(url: string): Promise<void> {
+    return new Promise((resolve, reject) => {
+      wx.navigateTo({
+        url,
+        success: () => resolve(),
+        fail: (error) => reject(error),
+      });
+    });
+  },
 };
 
 export default MiniProgram;
