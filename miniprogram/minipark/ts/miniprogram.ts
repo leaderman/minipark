@@ -97,6 +97,30 @@ const MiniProgram = {
       });
     });
   },
+
+  /**
+   * 在当前页面显示导航条加载动画。
+   */
+  showNavigationBarLoading(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      wx.showNavigationBarLoading({
+        success: () => resolve(),
+        fail: (error) => reject(error),
+      });
+    });
+  },
+
+  /**
+   * 在当前页面隐藏导航条加载动画。
+   */
+  hideNavigationBarLoading(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      wx.hideNavigationBarLoading({
+        success: () => resolve(),
+        fail: (error) => reject(error),
+      });
+    });
+  },
 };
 
 export default MiniProgram;
