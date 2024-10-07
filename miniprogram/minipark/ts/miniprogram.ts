@@ -73,6 +73,30 @@ const MiniProgram = {
       });
     });
   },
+
+  /**
+   * 开始下拉刷新。
+   */
+  startPullDownRefresh(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      wx.startPullDownRefresh({
+        success: () => resolve(),
+        fail: (error) => reject(error),
+      });
+    });
+  },
+
+  /**
+   * 停止当前页面下拉刷新。
+   */
+  stopPullDownRefresh(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      wx.stopPullDownRefresh({
+        success: () => resolve(),
+        fail: (error) => reject(error),
+      });
+    });
+  },
 };
 
 export default MiniProgram;
