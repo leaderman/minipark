@@ -12,6 +12,7 @@ export default [
   {
     rules: {
       "@typescript-eslint/explicit-function-return-type": "error",
+      "jsdoc/no-undefined-types": "off",
     },
   },
 ];

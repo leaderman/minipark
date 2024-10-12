@@ -135,6 +135,20 @@ const MiniProgram = {
       });
     });
   },
+
+  /**
+   * 获取指定组件的布局位置。
+   * @param {string} id 组件的 id。
+   * @returns {Promise<WechatMiniprogram.BoundingClientRectResult>} 组件的布局位置。
+   */
+  getRect(id: string): Promise<WechatMiniprogram.BoundingClientRectResult> {
+    return new Promise((resolve) => {
+      wx.createSelectorQuery()
+        .select(`#${id}`)
+        .boundingClientRect((rect) => resolve(rect))
+        .exec();
+    });
+  },
 };
 
 export default MiniProgram;

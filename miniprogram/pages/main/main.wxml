@@ -11,5 +11,10 @@
       link="{{ true }}"
       url="/pages/ts/throttle/throttle"
     ></mp-cell>
+    <mp-cell
+      title="布局位置"
+      link="{{ true }}"
+      url="/pages/ts/rect/rect"
+    ></mp-cell>
   </mp-cells>
 </view>
